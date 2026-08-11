@@ -15,24 +15,16 @@ def odi(state:Total):
     name=state["Name"]
     prompt=f'Give Me The ODI Statictis For The Player {name}'
     model=str_model_conn()
-    matches=model.invoke(prompt).matches
-    runs=model.invoke(prompt).runs
-
-    hundreds=model.invoke(prompt).hundreds
-    fifties=model.invoke(prompt).fifties
-    fours=model.invoke(prompt).fours
-    sixes=model.invoke(prompt).sixes
-    highest_score=model.invoke(prompt).highest_score
 
     return {
     "ODI": {
-        "matches":matches,
-        "runs": runs,
-        "hundreads": hundreds,
-        "fifties": fifties,
-        "fours": fours,
-        "sixes": sixes,
-        "highest_score":highest_score
+        "matches":model.invoke(prompt).matches,
+        "runs": model.invoke(prompt).runs,
+        "hundreads": model.invoke(prompt).hundreds,
+        "fifties": model.invoke(prompt).fifties,
+        "fours": model.invoke(prompt).fours,
+        "sixes": model.invoke(prompt).sixes,
+        "highest_score":model.invoke(prompt).highest_score
     }
 }
 
@@ -40,24 +32,16 @@ def t20(state:Total):
     name=state["Name"]
     prompt=f'Give Me The T20 Statictis For The Player {name}'
     model=str_model_conn()
-    matches=model.invoke(prompt).matches
-    runs=model.invoke(prompt).runs
-
-    hundreds=model.invoke(prompt).hundreds
-    fifties=model.invoke(prompt).fifties
-    fours=model.invoke(prompt).fours
-    sixes=model.invoke(prompt).sixes
-    highest_score=model.invoke(prompt).highest_score
 
     return {
     "T20": {
-        "matches":matches,
-        "runs": runs,
-        "hundreads": hundreds,
-        "fifties": fifties,
-        "fours": fours,
-        "sixes": sixes,
-        "highest_score":highest_score
+        "matches":model.invoke(prompt).matches,
+        "runs": model.invoke(prompt).runs,
+        "hundreads": model.invoke(prompt).hundreds,
+        "fifties": model.invoke(prompt).fifties,
+        "fours": model.invoke(prompt).fours,
+        "sixes": model.invoke(prompt).sixes,
+        "highest_score":model.invoke(prompt).highest_score
     }
 }
 
@@ -65,24 +49,16 @@ def test(state:Total):
     name=state["Name"]
     prompt=f'Give Me The Test Statictis For The Player {name}'
     model=str_model_conn()
-    matches=model.invoke(prompt).matches
-    runs=model.invoke(prompt).runs
-
-    hundreds=model.invoke(prompt).hundreds
-    fifties=model.invoke(prompt).fifties
-    fours=model.invoke(prompt).fours
-    sixes=model.invoke(prompt).sixes
-    highest_score=model.invoke(prompt).highest_score
-
+    
     return {
     "TEST": {
-        "matches":matches,
-        "runs": runs,
-        "hundreads": hundreds,
-        "fifties": fifties,
-        "fours": fours,
-        "sixes": sixes,
-        "highest_score":highest_score
+        "matches":model.invoke(prompt).matches,
+        "runs": model.invoke(prompt).runs,
+        "hundreads": model.invoke(prompt).hundreds,
+        "fifties": model.invoke(prompt).fifties,
+        "fours": model.invoke(prompt).fours,
+        "sixes": model.invoke(prompt).sixes,
+        "highest_score":model.invoke(prompt).highest_score
     }
 }
 
@@ -90,24 +66,17 @@ def ipl(state:Total):
     name=state["Name"]
     prompt=f'Give Me The IPL Statictis For The Player {name}'
     model=str_model_conn()
-    matches=model.invoke(prompt).matches
-    runs=model.invoke(prompt).runs
-
-    hundreds=model.invoke(prompt).hundreds
-    fifties=model.invoke(prompt).fifties
-    fours=model.invoke(prompt).fours
-    sixes=model.invoke(prompt).sixes
-    highest_score=model.invoke(prompt).highest_score
+    
 
     return {
     "IPL": {
-        "matches":matches,
-        "runs": runs,
-        "hundreads": hundreds,
-        "fifties": fifties,
-        "fours": fours,
-        "sixes": sixes,
-        "highest_score":highest_score
+        "matches":model.invoke(prompt).matches,
+        "runs": model.invoke(prompt).runs,
+        "hundreads": model.invoke(prompt).hundreds,
+        "fifties": model.invoke(prompt).fifties,
+        "fours": model.invoke(prompt).fours,
+        "sixes": model.invoke(prompt).sixes,
+        "highest_score":model.invoke(prompt).highest_score
     }
 }
 
